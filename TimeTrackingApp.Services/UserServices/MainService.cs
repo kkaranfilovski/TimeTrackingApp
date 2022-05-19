@@ -28,6 +28,7 @@ namespace TimeTrackingApp.Services.UserServices
                 }
                 else if (selection == "3")
                 {
+                    InMemoryDatabase.SaveToDatabase();
                     Helper.ShowSuccesMsg("Thanks for using the app. See you again!");
                     break;
                 }
