@@ -44,5 +44,18 @@ namespace TimeTrackingApp.Services.Menus
             Console.WriteLine("4. Other hobbies");
             Console.WriteLine("5. Go back");
         }
+
+        public static void AccountServiceMenu(string name)
+        {
+            Console.Clear();
+            Console.WriteLine($"Welcome to the account service {name}");
+            Console.WriteLine();
+            Console.WriteLine("Choose one of the following options:");
+            Console.WriteLine("1. Change password");
+            Console.WriteLine("2. Change firstname");
+            Console.WriteLine("3. Change lastname");
+            Console.WriteLine("4. Deactivate account");
+            Console.WriteLine("5. Log out");
+        }
     }
 }

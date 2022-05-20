@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TimeTrackingApp.Models.Classes;
+using TimeTrackingApp.Services.Menus;
 
 namespace TimeTrackingApp.Services.UserServices
 {
@@ -11,8 +12,18 @@ namespace TimeTrackingApp.Services.UserServices
     {
         public void AccountManagerMenu(User user)
         {
-            Console.WriteLine("Under construction...");
-            Console.ReadLine(); 
+            while (true)
+            {
+                try
+                {
+                    Screen.AccountServiceMenu(user.FirstName);
+                }
+                catch (Exception)
+                {
+
+                    throw;
+                }
+            } 
         }
     }
 }
